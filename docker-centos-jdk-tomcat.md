@@ -187,27 +187,48 @@
   >docker save -o xxx.tar 镜像id 可以将镜像保存为一个tar包;保存之后可以在任何地方加载镜像了，将生成的tar文件上传（上传命令 自行百度）到需要加载镜像的服务器后可以使用docker load :
   >
   >docker load -i xxxxx.tar 将tar导成镜像；之后可以使用docker images查看
-
+>
+  >
+>推到仓库：
+  >
+>docker tag local-image:tagname new-repo:tagname
+  >docker push new-repo:tagname
+>
+  >docker tag local-image:tagname new-repo:tagname
+>
+  >例如:
+>
+  >docker tag myservice:latest hub.tiduyun.com:5000/8/library/myservice:latest
+>
+  > docker tag centos-latest-jdk8-tomcat9:v1 hub.tiduyun.com:5000/8/java-environment/centos-jdk8-tomcat9-images-rp:v1
+>
+  >
+>docker push hub.tiduyun.com:5000/8/java-environment/centos-jdk8-tomcat9-images-rp:v1
+  
+  
   
 
+  
+  
+  
    
-
   
-
   
-
   
-
   
-
   
-
   
-
+  
+  
+  
+  
+  
+  
+  
   >
   >
   >
-
+  
   
 
 
